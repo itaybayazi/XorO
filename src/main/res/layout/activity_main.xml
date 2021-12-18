@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/main_bt_resetGame"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="30dp"
+        android:text="Reset Game"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/main_bt00"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_bt01"
+        app:layout_constraintEnd_toStartOf="@+id/main_bt01"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/main_bt01"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_bt02"
+        app:layout_constraintEnd_toStartOf="@+id/main_bt02"
+        app:layout_constraintStart_toEndOf="@+id/main_bt00" />
+
+    <Button
+        android:id="@+id/main_bt02"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_bt01"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <Button
+        android:id="@+id/main_bt22"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_bt21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_bt21" />
+
+    <Button
+        android:id="@+id/main_bt10"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_bt11"
+        app:layout_constraintEnd_toStartOf="@+id/main_bt11"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/main_bt21"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintEnd_toStartOf="@+id/main_bt22"
+        app:layout_constraintStart_toEndOf="@+id/main_bt20"
+        app:layout_constraintTop_toBottomOf="@+id/main_bt11" />
+
+    <Button
+        android:id="@+id/main_bt20"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_bt21"
+        app:layout_constraintEnd_toStartOf="@+id/main_bt21"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#FF0000" />
+
+    <Button
+        android:id="@+id/main_bt11"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintEnd_toStartOf="@+id/main_bt12"
+        app:layout_constraintStart_toEndOf="@+id/main_bt10"
+        app:layout_constraintTop_toBottomOf="@+id/main_bt01" />
+
+    <Button
+        android:id="@+id/main_bt12"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/main_bt11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_bt11" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <TextView
+            android:id="@+id/main_tv_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1: 0"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/main_tv_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_tv_p1"
+            android:text="Player 2: 0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/main_button_reset"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:text="reset"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/main_bt_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="119dp"
+        android:text="player 1 turn"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
